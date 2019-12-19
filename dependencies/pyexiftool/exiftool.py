@@ -68,7 +68,7 @@ except NameError:
     basestring = (bytes, str)
 
 repo_dir = subprocess.Popen(['git', 'rev-parse', '--show-toplevel'], stdout=subprocess.PIPE).communicate()[0].rstrip().decode('utf-8')
-executable = os.path.join(repo_dir, "exiftool/exiftool")
+executable = os.path.join(repo_dir, "dependencies/exiftool/exiftool")
 """The name of the executable to run.
 
 If the executable is not located in one of the paths listed in the
